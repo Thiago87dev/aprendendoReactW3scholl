@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Garage from "./Components/Garage";
+import Football from "./Components/Football";
+import Garage2 from "./Components/Garage2";
+import MyForm from "./Components/MyForm";
+import App from "./Components/App";
+import ContAndTodo
+ from "./Components/ContAndTodo";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+    <Garage />
+    <Football isGoal={false}/>
+    <Garage2/>
+    <MyForm/>
+    <App/>
+    <ContAndTodo/>
+  </>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
